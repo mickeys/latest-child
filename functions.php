@@ -1,16 +1,14 @@
 <?php
 
-$parent_style = 'latest-style' ;
+$parent_style = 'latest-style' ; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
 
 add_action( 'wp_enqueue_scripts', 'latest_child_enqueue_styles' );
+
 function latest_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
 function my_theme_enqueue_styles() {
-
-    $parent_style = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
-
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
@@ -28,7 +26,9 @@ add_action( 'wp_enqueue_scripts', 'latest_child_enqueue_styles' );
  |
  | While writing WordPress content I frequently want to link to something I've
  | written before without having to remember whether it was a page or post.
- | This shortcode does just that. 
+ | This shortcode does just that.
+ |
+ | Reference:	https://codex.wordpress.org/Shortcode%20API
  |
  | Also, a shout out to Dave Winer's Userland.com 'Radio' and 'Frontier' content
  | management systems, which did this sort of thing effortlessly, making it
