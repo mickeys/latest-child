@@ -1,4 +1,4 @@
-# latest-child
+# latest_child_wordpress_theme
 
 'Latest Child' is a WordPress [child theme](https://codex.wordpress.org/Child_Themes) which modifies the '[latest](http://uxlthemes.com/theme/latest)' theme, by [uXL Themes](http://uxlthemes.com). Both themes are shared with you under the terms of the [GNU General Public License](http://www.gnu.org/licenses/).
 
