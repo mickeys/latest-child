@@ -6,4 +6,11 @@
 
 I'm using Latest Child as a proving ground for [WordPress](https://wordpress.org/) exploration, while providing added functionality for clients who are running their websites with  the 'Latest' theme.
 
-As I roll in functionality I'll add updates here.
+Added to the `functions.php` file:
+
+* An implementation of the `[link]` shortcode, which implements intra-site cross-document linking described in [
+WordPress shortcode link for Posts & Pages](http://sattlers.org/2017/01/25/gist-get-wordpress-permalink-for-posts-pages/). The syntax of the shortcode usage is:
+
+```
+[link t="title of page or post" a="optional alternative text"]
+```
