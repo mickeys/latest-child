@@ -1,4 +1,17 @@
 <?php
+/* ----------------------------------------------------------------------------
+ | Yoast SEO breadcrumb-creating function
+ +-------------------------------------------------------------------------- */
+add_action( 'loop_start', 'wordpress_seo_plugins_breadcrumbs' );
+function wordpress_seo_plugins_breadcrumbs() {
+if ( function_exists('yoast_breadcrumb') ) {
+	yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+	}
+}
+
+/* ----------------------------------------------------------------------------
+ | Make this a child theme of $parent_style
+ +-------------------------------------------------------------------------- */
 add_action( 'wp_enqueue_scripts', 'latest_child_enqueue_styles' );
 
 function latest_child_enqueue_styles() {
